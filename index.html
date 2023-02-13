@@ -2,9 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>독심나찰</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>만인방의 호가명이외다.</title>
+    <style>
+      button{border:none; background:black; color: white; font-size:18px; padding: 12px;}
+    </style>
   </head>
   <body>
     <div>만인방의 호가명이외다.</div>
+    <button id="test">군사</button>
+    <script>
+      window.onload = function(){
+  document.getElementById("test").addEventListener("click", function(){
+    var p = document.createElement( 'p' );
+    var text = document.createTextNode("련주님.");
+    p.appendChild(text);
+    document.body.appendChild(p);
+});
+}
+    </script>
   </body>
 </html>
