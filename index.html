@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>만인방의 호가명이외다.</title>
     <style>
-      button{border:none; background:black; color: white; font-size:18px; padding: 12px;}
+	html{background-color:black;}
+	div.title{text-align:center;
+	font-size:30px;
+	padding:20px;
+	color:white;}
+	div.word
+	{font-size:20px;
+	color:white;}
+      button
+	{border: none;
+	background: white;
+	color: black;
+	font-size: 20px;
+	margin: 20px;
+	padding: 10px;}
     </style>
+  <script>
+    function getRandomWord() {
+      const words = [
+"……한 번씩은 너무 과한 걸 바라신다니까.",
+"련주님. 그만 기침하십시오. 해가 중천에 떴습니다.",
+"방주님. 자꾸 대낮부터 이러시면 방주로서의 위엄이 살지 않습니다.",
+"련주님께서 겪어 온 일들에 비한다면 저런 일 따위는 위기라 불릴 만한 것도 못 됩니다.",
+"수하들은 믿지 않으십니까?",
+"고생하셨습니다, 련주님.",
+"그럼 내치시겠습니까?"];
+      const random = Math.floor(Math.random() * words.length);
+      const word = words[random];
+      document.querySelector(".word").innerText = word;
+    }
+  </script>
   </head>
   <body>
-    <div>만인방의 호가명이외다.</div>
-    <button id="test">군사</button>
-    <script>
-      window.onload = function(){
-  document.getElementById("test").addEventListener("click", function(){
-    var p = document.createElement( 'p' );
-    var text = document.createTextNode("련주님.","그럼 내치시겠습니까?");
-    p.appendChild(text);
-    document.body.appendChild(p);
-});
-}
-    </script>
+    <div class="title">만인방의 호가명이외다.
+	<br>
+    <button onclick="getRandomWord()">가명아</button>
+	<div class="word"></div>
+</div>
   </body>
 </html>
