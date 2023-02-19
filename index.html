@@ -66,15 +66,16 @@
 	padding:5px 20px;
 	margin:0px 10px;}
 	
-	div.btn{display:inline-block;
+	button{display:inline-block;
 	border-radius:5px;
+	border:none;
 	background-color:white;
 	color:black;
 	font-size:20px;
 	padding:5px;
 	margin:10px;}
 	
-	div.btn:hover{background-color:black;
+	button:hover{background-color:black;
 	color:white;}
 	    
     </style>
@@ -108,7 +109,7 @@
   </head>
 	
   <body>
-<div class="all">
+	<div class="all">
 	<div class="title">사패련 전서응</div>
 	<div class="chat">
 		<div class="talk">
@@ -121,8 +122,8 @@
 	</div>
 	<div class="send">
 		<div class="fake">전서응 보내기</div>
-		<div class="btn" onclick="getRandomWord()">가명아</div>
+		<button onclick="getRandomWord()">가명아</button>
 	</div>
-</div>
-</body>
+	</div>
+	</body>
 </html>
