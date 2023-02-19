@@ -39,13 +39,17 @@
 	color:white;}
 	
 	div.send{background-color:gray;
-	color:white;
-	font-size:15px;
-	text-align:left;
 	border-radius:10px;
 	padding:10px;}
-	    
+	
+	div.fake{background-color:white;
+	color:gray;
+	display:inline-block;
+	font-size:15px;
+	text-align:left;}
+	
 	div.btn{
+	display:inline-block;
 	border-radius:10px;
 	background:white;
 	color:black;
@@ -81,8 +85,9 @@
 	<div class="chat">
 		<div class="word">대사 출력</div>
 	</div>
-	<div class="send">전서응 보내기
-	<div class="btn" onclick="getRandomWord()">가명아</div>
+	<div class="send">
+		<div class="fake">전서응 보내기</div>
+		<div class="btn" onclick="getRandomWord()">가명아</div>
 	</div>
 </div>
 </body>
