@@ -30,20 +30,27 @@
 	
 	div.word{background-color:black;
 	text-align:left;
-	font-size:20px;
+	font-size:15px;
 	border-radius:10px;
 	margin:10px;
 	padding:10px;
 	color:white;}
 	
 	div.send{background-color:gray;
-	font-size:20px;
 	border-radius:10px;
 	margin:20px;
 	padding:10px;
 	height:60px;}
+	
+	div.fake{blackground-color:white;
+	color:white;
+	font-size:15px;
+	border-radius:10px;
+	margin:10px;
+	padding:10px;
+	height:50px;}
 	    
-      button{font-family:'Gowun Batana', serif;
+	button{font-family:'Gowun Batana', serif;
 	border:none;
 	border-radius:10px;
 	background:white;
@@ -80,7 +87,8 @@
 	<div class="chat">
 		<div class="word">대사 출력</div>
 	</div>
-	<div class="send">전서응 보내기
+	<div class="send">
+		<div class="fake">전서응 보내기</div>
 	<button onclick="getRandomWord()">가명아</button>
 	</div>
 </div>
